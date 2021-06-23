@@ -11,13 +11,22 @@ header {
 }
 header .title {
 	font-family: 'Verdana';
-	text-align: center;
 	font-size: 45px;
 	color: #DDDDDD;
+	float: right;
+}
+header .title-link {
+	color: #DDDDDD;
+	font-size: 35px;
+}
+header .title-link:active, header .title-link:focus, header .title-link:hover {
+	color: #DDDDDD;
+	text-decoration: none;
 }
 header .subtitle {
 	font-size: 18px;
 	color: #DDDDDD;
+	clear: both;
 }
 footer {
 	color: #DDDDDD;
