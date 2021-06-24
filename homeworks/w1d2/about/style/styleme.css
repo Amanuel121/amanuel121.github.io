@@ -1,6 +1,5 @@
 .container {
 	border: 1px solid #691E1E;
-	background-color: #EEEEEE;
 	width: 50vw;
 	margin: 0 auto;
 	padding: 0px;
@@ -12,11 +11,11 @@ header {
 header .title {
 	font-family: 'Verdana';
 	font-size: 45px;
-	color: #DDDDDD;
+	color: #FFFFFF;
 	float: right;
 }
 header .title-link {
-	color: #DDDDDD;
+	color: #FFFFFF;
 	font-size: 35px;
 }
 header .title-link:active, header .title-link:focus, header .title-link:hover {
