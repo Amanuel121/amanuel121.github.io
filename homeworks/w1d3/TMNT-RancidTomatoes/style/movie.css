@@ -20,8 +20,8 @@ html, body {
 }
 #content-area {
 	border: 4px solid gray;
-	border-radius: 20px;
-	margin: auto;
+	/* border-radius: 20px; */
+	margin: 0 auto;
 	width: 800px;
 }
 #content-area aside {
@@ -29,14 +29,14 @@ html, body {
 }
 .left-section {
 	width: 550px;
-	border-top-right-radius: 20px;
+	/* border-top-right-radius: 20px; */
 }
 .left-section .heading img {
-	border-top-left-radius: 20px;
+	/* border-top-left-radius: 20px; */
 	vertical-align: bottom;
 }
 .left-section .heading {
-	border-top-left-radius: 20px;
+	/* border-top-left-radius: 20px; */
 	background-image: url('../images/rbg.png');
 	font-weight: bold;
 	font-size: 48pt;
@@ -63,13 +63,13 @@ html, body {
 	margin-bottom: 20pt;
 }
 .right-section {
-	border-top-right-radius: 20px;
+	/* border-top-right-radius: 20px; */
 	background-color: #A2B964;
 	width: 250px;
 	font: normal 8pt Arial, Sans-Serif;
 }
 .right-section img {
-	border-top-right-radius: 20px;
+	/* border-top-right-radius: 20px; */
 }
 .right-section dl {
 	padding: 10pt;
