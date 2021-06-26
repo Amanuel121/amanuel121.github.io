@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://sakai.cs.miu.edu/access/content/attachment/937378a9-0b22-45f6-8986-20afa94b2d3a/Assignments/becb19f0-b490-4679-a09f-79d93e408018/JsIntroLab.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Title</title>
+    <script>
+
+/* runs test to see if expected argument is === to value returned by function2test argument */
+function myFunctionTest(expected, found) {
+  if (expected === found) {
+    return "TEST SUCCEEDED";
+  } else {
+    return "TEST FAILED.  Expected " + expected + " found " + found;
+  }
+}
+
+/* max returns the maximum of 2 arguments */
+function max(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  };
+}
+console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
+
+/* max3 takes 3 numbers as arguments and returns the largest */
+function maxOfThree(a, b, c) {
+  return max(max(a, b), c);
+
+}
+
+console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, maxOfThree(55, 4, 44)));
+
+console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, maxOfThree(55, 4, 44)));
+    </script>
+</head>
+<body>
+
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J <br>
+Or on Firefox with CTRL_SHIFT_K
+
+
+</body></html>
