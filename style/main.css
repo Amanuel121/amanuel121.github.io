@@ -47,11 +47,14 @@ article.content {
 	color: #691E1E;
 	text-align: center;
 	text-transform: uppercase;
-	border-bottom: 1px solid #AAAAAA;
 }
 ul {
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
 	list-style: none;
 	padding: 0;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 ul li a {
 	margin-top: 20px;

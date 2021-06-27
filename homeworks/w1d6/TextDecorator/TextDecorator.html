@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Text Decorator</title>
+    <link
+      href="decoratemytext.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Text Decorator</h1>
+
+    <div>
+      <img src="decorated.gif" alt="very decorated!" />
+    </div>
+
+    <!-- Your UI controls go here -->
+    <fieldset>
+      <legend>Text</legend>
+
+      <textarea rows="4" cols="30" id="txtarea">
+            Sample item 1
+            Sample item 2
+        </textarea
+      >
+    </fieldset>
+
+    <fieldset>
+      <legend>Decoration</legend>
+      <button onclick="setInterval(changeFont, 500)">Bigger Decorations!</button
+      ><br />
+	  <label>
+		  <input type="checkbox" onchange="decoreText()" id="blingId" />Bling
+	  </label>
+    </fieldset>
+
+    <script src="decoratemytext.js"></script>
+  </body>
+</html>
