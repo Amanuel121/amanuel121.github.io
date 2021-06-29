@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Regular Expressions</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="card-header bg-primary">
+			<h3 class="text-white float-start">MUM Golden Dome Market:::SRM System</h3>
+
+			<button class="btn btn-secondary float-end">Sign Out</button>
+			<h4 class="label label-default text-white float-end">Hello!</h4>
+			<div class="clearfix"></div>
+		</header>
+		<div class="container py-5">
+			<div class="row">
+				<h2 class="toast-header">New Product Form</h2>
+			</div>
+
+			<form class="row">
+				<div class="col-md-6 form-group py-2">
+					<label for="productNumber" class="pb-2">Product Number</label>
+					<input type="text" id="productNumber" class="form-control">
+				</div>
+				
+				<div class="col-md-6 form-group py-2">
+					<label for="quantity" class="pb-2">Quantity</label>
+					<input type="number" id="quantity" class="form-control" value="0" min="0" step="1">
+				</div>
+				
+				<div class="col-md-6 form-group py-2">
+					<label for="name" class="pb-2">Name</label>
+					<input type="text" id="name" class="form-control">
+				</div>
+				
+				<div class="col-md-6 form-group py-2">
+					<label for="supplier" class="pb-2">Supplier</label>
+					<select id="supplier" class="form-control">
+						<option value="Rage Against The Machine">Rage Against The Machine</option>
+						<option value="KoRn">KoRn</option>
+						<option value="Arch Enemy">Arch Enemy</option>
+						<option value="Slipknot">Slipknot</option>
+					</select>
+				</div>
+				
+				<div class="col-md-6 form-group py-2">
+					<label for="unitPrice" class="pb-2">Unit Price</label>
+					<input type="number" id="unitPrice" class="form-control" value="0.0" min="0.0" step="0.1">
+				</div>
+				
+				<div class="col-md-6 form-group py-2">
+					<label for="dateSupplied" class="pb-2">Date Supplied</label>
+					<input type="date" id="dateSupplied" class="form-control">
+					<p class="text-muted">Enter a valid Date.</p>
+				</div>
+				
+				<div>
+					<button type="submit" class="btn btn-outline-primary float-end ms-xl-3">Add Product</button>
+					<button type="submit" class="btn btn-outline-danger float-end ms-xl-3">Cancel</button>
+					<button type="submit" class="btn btn-outline-dark float-end ms-xl-3">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="verify.js"></script>
+	</body>
+</html>

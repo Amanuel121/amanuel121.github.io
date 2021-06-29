@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Regular Expressions</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container py-5">
+			<form>
+				<div class="form-group py-2">
+					<label for="website" class="pb-2">Website</label>
+					<input type="url" id="website" placeholder="Enter website" class="form-control" required pattern="https?://.+"
+						title="Please enter a URL">
+				</div>
+				
+				<div class="form-group py-2">
+					<label for="email" class="pb-2">Email address</label>
+					<input type="email" id="email" placeholder="Enter email" class="form-control" required>
+					<p class="text-muted">We'll never share your email with anyone else.</p>
+				</div>
+				
+				<div class="form-group py-2">
+					<label for="password" class="pb-2">Password</label>
+					<input type="password" id="password" placeholder="Password" class="form-control" required pattern="(?=\d+)(?=[a-z]+)(?=[A-Z]+).{10,}"
+						title="Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
+				</div>
+				
+				<div class="py-3">
+					<label><input type="checkbox"> Check me out</label><br>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+
+		<script src="verify.js"></script>
+	</body>
+</html>
