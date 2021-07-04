@@ -13,6 +13,8 @@ String.prototype.filter = function(banned) {
 	return newPhrase;
 };
 
+console.log("not This house is not nice!".filter( ["not","neigh"] ));
+
 Array.prototype.bubbleSort = function() {
 	for (let i1 = 0; i1 < this.length; i1++) {
 		for (let i2 = 0; i2 < this.length; i2++) {
@@ -27,7 +29,7 @@ Array.prototype.bubbleSort = function() {
 	return this;
 };
 
-// console.log( [ 3, 2, 5, 4, 1 ].bubbleSort() );
+console.log( [ 3, 2, 5, 4, 1 ].bubbleSort() );
 
 var Person = function() {};
 Person.prototype.initialize = function(name, age) {
@@ -50,7 +52,9 @@ me.learn("Inheritance");
 var Teacher = function() {};
 Teacher.prototype = new Person();
 Teacher.prototype.teach = function(subject) {
-	return this.name+" is now teaching "+subject;
+	let result = this.name+" is now teaching "+subject;
+	console.log(result);
+	return result;
 }
 var slash = new Teacher();
 slash.initialize("Slash", 55);
