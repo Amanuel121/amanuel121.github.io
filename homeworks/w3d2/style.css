@@ -1,0 +1,21 @@
+#circle-container {
+	padding: 15px 0px;
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+}
+
+#form {
+	position: fixed;
+	z-index: 2021;
+	right: 40px;
+	bottom: 25px;
+}
+
+.circle {
+	display: block;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1995;
+}
