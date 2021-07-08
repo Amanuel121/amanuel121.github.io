@@ -1,8 +1,8 @@
-// Variables
-var width,growthAmount,interval,numberCircles;
-colors = ["345678", "987654", "12A3B9", "CF98EE", "56AB69"];
-
 $(function(){
+	// Variables
+	var width,growthAmount,interval,numberCircles;
+	colors = ["345678", "987654", "12A3B9", "CF98EE", "56AB69"];
+
 	// Circle Clicked Function
 	circleClicked = function(){
 		$(this).remove();
