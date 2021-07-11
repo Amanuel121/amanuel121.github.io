@@ -1,0 +1,11 @@
+<%- include('top.ejs') %>
+<ul>
+	<% for (const item of items) { %>
+		<li>
+			<p>Name: <%= item.name %></p>
+			<p>Price: <%= item.price %></p>
+			<p>Description: <%= item.quantity %></p>
+		</li>
+	<% } %>
+</ul>
+<%- include('bottom.ejs') %>
